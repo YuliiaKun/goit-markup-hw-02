@@ -1,8 +1,12 @@
 :root {
   --txt-primery-color: #757575;
   --txt-title-color: #212121;
+  --txt-contact: rgba(255, 255, 255, 0.6);
   --accent-color: #2196f3;
   --primery-white-color: #ffffff;
+  --primery-black-color: #000000;
+  --background: #f5f4fa;
+  --bgr-primery-dark: #2f303a;
 }
 
 body {
@@ -30,8 +34,7 @@ ul {
 }
 
 .header .logo-studio {
-  color: #000000;
-  font-family: "Raleway", sans-serif;
+  color: var(--primery-black-color);
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
@@ -40,7 +43,7 @@ ul {
 
 .nav-page {
   color: var(--txt-title-color);
-  font-weight: 500;
+  font-weight: medium;
   font-size: 14px;
   line-height: 1.33;
   letter-spacing: 0.02em;
@@ -48,14 +51,14 @@ ul {
 
 .nav-pag.current {
   color: var(--accent-color);
-  font-weight: 500;
+  font-weight: medium;
   font-size: 14px;
   line-height: 1.33;
   letter-spacing: 0.02em;
 }
 
 .nav-contact {
-  font-weight: 500;
+  font-weight: medium;
   font-size: 14px;
   line-height: 1.33;
   letter-spacing: 0.02em;
@@ -69,7 +72,7 @@ ul {
 }
 
 .hero {
-  background-color: #2f303a;
+  background-color: var(--bgr-primery-dark);
   color: var(--primery-white-color);
 }
 
@@ -111,9 +114,17 @@ ul {
   letter-spacing: 0.03em;
 }
 
+.our-team-section {
+  background-color: var(--background);
+}
+
+.our-team-card {
+  background-color: var(--primery-white-color);
+}
+
 .team-name {
   color: var(--txt-title-color);
-  font-weight: 500;
+  font-weight: medium;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -125,12 +136,11 @@ ul {
   letter-spacing: 0.03em;
 }
 .footer {
-  background-color: #2f303a;
+  background-color: var(--bgr-primery-dark);
 }
 
 .footer .logo-studio {
   color: var(--primery-white-color);
-  font-family: "Raleway", sans-serif;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
@@ -142,10 +152,11 @@ ul {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  font-style: normal;
 }
 
 .footer-contact {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--txt-contact);
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
@@ -154,7 +165,7 @@ ul {
 }
 
 .filters {
-  background-color: #f5f4fa;
+  background-color: var(--background);
   color: var(--txt-title-color);
 }
 
